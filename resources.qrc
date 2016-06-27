@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/MyTestPlGi" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
