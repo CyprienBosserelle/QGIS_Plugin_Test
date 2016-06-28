@@ -30,7 +30,7 @@ FORM_CLASS, _ = uic.loadUiType(os.path.join(
 
 
 class MyTestPlGiDialog(QtGui.QDialog, FORM_CLASS):
-    def __init__(self, parent=None):
+    def __init__(self, iface, parent=None):
         """Constructor."""
         super(MyTestPlGiDialog, self).__init__(parent)
         # Set up the user interface from Designer.
@@ -39,3 +39,25 @@ class MyTestPlGiDialog(QtGui.QDialog, FORM_CLASS):
         # http://qt-project.org/doc/qt-4.8/designer-using-a-ui-file.html
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
+        self.iface = iface
+        list1 = [
+            self.tr('Ikonos'),
+            self.tr('Quickbird'),
+            self.tr('World View 2'),
+        ]
+
+        self.comboBox_sattype.clear()
+        self.comboBox_sattype.addItems(list1)
+
+        self.Combo_LayerItem.clear()
+        self.Combo_LayerItem.addItems(list1)
+
+    def loadlayerattributes(self):
+        list1 = [
+            self.tr('A'),
+            self.tr('B'),
+            self.tr('C'),
+        ]
+        self.Combo_LayerItem.clear()
+        self.Combo_LayerItem.addItems(list1)
+

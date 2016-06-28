@@ -22,9 +22,15 @@
 """
 from PyQt4.QtCore import QSettings, QTranslator, qVersion, QCoreApplication
 from PyQt4.QtGui import QAction, QIcon
+
+
+
 # Initialize Qt resources from file resources.py
 import resources
+
 # Import the code for the dialog
+from qgis.core import QgsMapLayer
+
 from my_test_plugin_dialog import MyTestPlGiDialog
 import os.path
 
@@ -167,6 +173,13 @@ class MyTestPlGi:
             callback=self.run,
             parent=self.iface.mainWindow())
 
+        icon_path = ':/plugins/MyTestPlGi/icon.png'
+        self.add_action(
+            icon_path,
+            text=self.tr(u'test listener'),
+            callback=self.run,
+            parent=self.iface.mainWindow())
+
 
     def unload(self):
         """Removes the plugin menu item and icon from QGIS GUI."""
@@ -182,9 +195,24 @@ class MyTestPlGi:
     def run(self):
         """Run method that performs all the real work"""
         # show the dialog
+        self.dlg.combo_survey.clear()
+        self.dlg.combo_avail_layers.clear()
+
+        for layer in self.iface.mapCanvas().layers():
+            if layer.type() == QgsMapLayer.RasterLayer:
+                self.dlg.combo_avail_layers.addItem(str(layer.name()))
+            elif layer.type() == QgsMapLayer.VectorLayer:
+                self.dlg.combo_survey.addItem(str(layer.name()))
+
+        #self.dlg.combo_survey.addItems(QStringList([name for name in self.iface.mapCanvas().layers()]))
+
+
+
         self.dlg.show()
         # Run the dialog event loop
         result = self.dlg.exec_()
+
+
         # See if OK was pressed
         if result:
             # Do something useful here - delete the line containing pass and
