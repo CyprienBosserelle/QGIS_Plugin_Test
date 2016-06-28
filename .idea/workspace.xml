@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c74197-2c58-42ca-bb7b-039c9d516b8c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_test_plugin_dialog_base.ui" afterPath="$PROJECT_DIR$/my_test_plugin_dialog_base.ui" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_test_plugin.py" afterPath="$PROJECT_DIR$/my_test_plugin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_test_plugin_dialog.py" afterPath="$PROJECT_DIR$/my_test_plugin_dialog.py" />
     </list>
     <ignored path="MyTestPlGi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,7 +70,9 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="FORCE_PUSH_ALLOWED" value="true" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -141,7 +140,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager">
@@ -322,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1467083063276</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated gui">
+      <created>1467088979972</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1467088979972</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -361,7 +367,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+    <MESSAGE value="updated gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated gui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
