@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c74197-2c58-42ca-bb7b-039c9d516b8c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_test_plugin_dialog_base.ui" afterPath="$PROJECT_DIR$/my_test_plugin_dialog_base.ui" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_test_plugin.py" afterPath="$PROJECT_DIR$/my_test_plugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_test_plugin_dialog.py" afterPath="$PROJECT_DIR$/my_test_plugin_dialog.py" />
     </list>
     <ignored path="MyTestPlGi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,8 +29,8 @@
       <file leaf-file-name="my_test_plugin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_test_plugin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+            <state relative-caret-position="616">
+              <caret line="196" column="57" selection-start-line="196" selection-start-column="14" selection-end-line="196" selection-end-column="57" />
               <folding>
                 <element signature="e#1136#1211#0" expanded="true" />
               </folding>
@@ -38,9 +41,11 @@
       <file leaf-file-name="my_test_plugin_dialog.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_test_plugin_dialog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="665">
+              <caret line="69" column="59" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="59" />
+              <folding>
+                <element signature="e#1142#1151#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,8 +53,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+            <state relative-caret-position="687">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -310,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1467083043186</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changes">
+      <created>1467083063276</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1467083063276</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -390,16 +402,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        <state relative-caret-position="687">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_test_plugin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+        <state relative-caret-position="616">
+          <caret line="196" column="57" selection-start-line="196" selection-start-column="14" selection-end-line="196" selection-end-column="57" />
           <folding>
             <element signature="e#1136#1211#0" expanded="true" />
           </folding>
@@ -408,9 +420,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my_test_plugin_dialog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="665">
+          <caret line="69" column="59" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="59" />
+          <folding>
+            <element signature="e#1142#1151#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -65,7 +65,7 @@ class MyTestPlGi:
                 QCoreApplication.installTranslator(self.translator)
 
         # Create the dialog (after translation) and keep reference
-        self.dlg = MyTestPlGiDialog()
+        self.dlg = MyTestPlGiDialog(self.iface)
 
         # Declare instance attributes
         self.actions = []
@@ -173,13 +173,6 @@ class MyTestPlGi:
             callback=self.run,
             parent=self.iface.mainWindow())
 
-        icon_path = ':/plugins/MyTestPlGi/icon.png'
-        self.add_action(
-            icon_path,
-            text=self.tr(u'test listener'),
-            callback=self.run,
-            parent=self.iface.mainWindow())
-
 
     def unload(self):
         """Removes the plugin menu item and icon from QGIS GUI."""
@@ -211,6 +204,7 @@ class MyTestPlGi:
         self.dlg.show()
         # Run the dialog event loop
         result = self.dlg.exec_()
+
 
 
         # See if OK was pressed

@@ -23,6 +23,8 @@
 
 import os
 
+from qgis.core import QgsMapLayer
+
 from PyQt4 import QtGui, uic
 
 FORM_CLASS, _ = uic.loadUiType(os.path.join(
@@ -49,15 +51,23 @@ class MyTestPlGiDialog(QtGui.QDialog, FORM_CLASS):
         self.comboBox_sattype.clear()
         self.comboBox_sattype.addItems(list1)
 
-        self.Combo_LayerItem.clear()
-        self.Combo_LayerItem.addItems(list1)
+        #self.Combo_LayerItem.clear()
+        #self.Combo_LayerItem.addItems(list1)
 
-    def loadlayerattributes(self):
-        list1 = [
-            self.tr('A'),
-            self.tr('B'),
-            self.tr('C'),
-        ]
+        self.combo_survey.currentIndexChanged.connect(self.loadlayerattributes)
+
+    def loadlayerattributes(self, number):
+        #layerlist = self.iface.mapCanvas().layers()
         self.Combo_LayerItem.clear()
-        self.Combo_LayerItem.addItems(list1)
+        layerlist = []
+        for layer in self.iface.mapCanvas().layers():
+            if layer.type() == QgsMapLayer.VectorLayer:
+                layerlist.append(layer)
+
+        layer = layerlist[number]
+
+        for field in layer.pendingFields():
+            self.Combo_LayerItem.addItem(str(field.name()))
+
+
 

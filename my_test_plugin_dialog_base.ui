@@ -120,21 +120,5 @@
     </hint>
    </hints>
   </connection>
-  <connection>
-   <sender>combo_survey</sender>
-   <signal>activated(int)</signal>
-   <receiver>Combo_LayerItem</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>960</x>
-     <y>195</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>723</x>
-     <y>265</y>
-    </hint>
-   </hints>
-  </connection>
  </connections>
 </ui>
